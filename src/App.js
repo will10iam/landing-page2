@@ -1,5 +1,9 @@
 import logo1 from './assets/logo1.svg'
 import logo2 from './assets/logo2.svg'
+import icon1 from './assets/icon1.svg'
+import icon2 from './assets/icon2.svg'
+import icon3 from './assets/icon3.svg'
+import icon4 from './assets/icon4.svg'
 import styled from 'styled-components';
 
 function App() {
@@ -54,8 +58,29 @@ function App() {
       </SSection>
 
       <SSection2>
-        <h1>Palestrantes</h1>
+        <div>
+          <h1>Sobre o Evento</h1>
+          <hr></hr>
+          <p>Não é novidade que as <b>tecnologias</b> estão impactando o dia a dia das organizações.
+            As empresas vivem a chamada <b>transformação digital</b> e estão aproveitando a tecnologia para melhorar processos, performance e aumentar resultados.</p>
+          <p>O jeito das <b>pessoas aprenderem</b> também mudou. Novos professores, como Google, Wikipedia e Youtube, surgiram e informações estão disponiveis o tempo todo.
+            Por isso, <b>temos um novo perfil de colaboradores nas empresas.</b> De acordo com a Deloitte, as pessoas têm 1% da semana disponivel para dedicar-se a treinamento e desenvolvimento, uma média de 24 de minutos.</p>
+          <p>Em meio a tantas mudanças, como os profissionais de T&D têm encontrado formas <b>inovadoras e adequadas</b> de <b>desenvolver pessoas?</b>
+            O RH da sua empresa tem oferecido novas formas de levar conhecimento para as pessoas <b>utilizado a tecnologia</b> a seu favor?</p>
+          <p>A <b>educação corporativa na transformação digital</b> é o tema do próximo <b>Manhã com RH</b> com os especialistas <b>Renata Furlan</b>, Head de Digital da Crescimentum e <b>Richard Uchoa Vasconcelos,</b> CEO da LEO Learning Brasil.
+            Aprenda como o digital pode <b>revolucionar a aprendizagem</b> nas organizações! Participe e conheça: </p>
+        </div>
 
+        <Grid>
+          <img src={icon1} alt='' />
+          <p>A revolução da aprendizagem a partir das novas tecnologias e como o RH pode utilizá- las a seu favor.</p>
+          <img src={icon3} alt='' />
+          <p>Ferramentas de Neurociência para potencializar o desenvolvimento de pessoas.</p>
+          <img src={icon2} alt='' />
+          <p>Estratégias de Educação Corporativa para atender ao novo perfil de colaboradores e universidades corporativas.</p>
+          <img src={icon4} alt='' />
+          <p>O papel do RH na Implementação do lifelong learning e blended learning nas organizações.</p>
+        </Grid>
       </SSection2>
     </>
   );
@@ -172,4 +197,24 @@ const SSection2 = styled.section`
 background-color: white;
 height: 800px;
 
+& hr {
+  width: 150px;
+  border-color: #FF6FC1;
+}
+
 `
+const Grid = styled.div`
+  display: grid;
+  grid-template-columns: 450px 450px 450px 450px;
+  grid-template-rows: 120px 120px;
+  grid-column-gap: 15px;
+  grid-row-gap: 5px;
+  justify-content: center;
+
+  & p { 
+    margin-left: -235px;
+    margin-top: 110px;
+    width: 450px;
+    font-size: 20px;
+  }
+`;
