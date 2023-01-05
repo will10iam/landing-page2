@@ -9,8 +9,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-image: url(../src/assets/bg.png);
   background-repeat: no-repeat;
-  background-size: auto;
-  background-position: center;
+  background-size: contain;
 }
 
 code {
